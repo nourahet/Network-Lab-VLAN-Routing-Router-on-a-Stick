@@ -1,0 +1,17 @@
+> enable 
+# config terminal
+# int g0/0
+# no shut     // activation of the interface 
+# exit
+
+# int g0/0.10
+# encapsulation dot1Q 10  // configure a router's sub-interface to read and manage traffic tagged for VLAN 10
+# ip address 192.168.1.1 255.255.255.0
+# exit 
+
+# int g0/0.11
+# encapsulation dot1Q 11 // configure a router's sub-interface to read and manage traffic tagged for VLAN 10
+# ip address 192.168.2.1 255.255.255.0
+# exit 
+
+# do write 
