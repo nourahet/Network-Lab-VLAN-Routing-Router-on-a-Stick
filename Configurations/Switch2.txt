@@ -1,0 +1,20 @@
+> enable 
+# config terminal
+# hostname SW02
+# vlan 10 
+# name marketing 
+# vlan 11 
+# name rh 
+
+
+# int f0/2 
+# switchport mode access
+# switchport access vlan 10
+
+# int f0/3 
+# switchport mode access 
+# switchport access vlan 11
+
+
+# int f0/1 
+# switchport mode trunk 
